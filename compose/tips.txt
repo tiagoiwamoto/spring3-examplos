@@ -1,0 +1,10 @@
+# List lambdas
+awslocal lambda list-functions
+
+# Delete a lambda function
+awslocal lambda delete-function --function-name HelloTiago >/dev/null 2>&1 || true
+
+# Create a lambda function
+awslocal lambda create-function \
+  --function-name HelloTiago \
+  ...

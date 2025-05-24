@@ -1,0 +1,12 @@
+services:
+  localstack:
+    image: localstack/localstack:3
+    container_name: localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=lambda,iam
+    volumes:
+      - ./localstack/01-create-lambda.sh:/etc/localstack/init/ready.d/01-create-lambda.sh
+      - ./localstack/lambda:/lambda                       # <-- monta o código da lambda
+      - /var/run/docker.sock:/var/run/docker.sock
