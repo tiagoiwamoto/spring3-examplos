@@ -1,4 +1,4 @@
-package io.github.api.spring3examplos.lambda.config;
+package io.github.api.spring3examplos.aws.lambda.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

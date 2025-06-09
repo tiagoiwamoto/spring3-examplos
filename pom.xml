@@ -61,6 +61,20 @@
             <version>2.31.47</version>
         </dependency>
 
+        <!-- Azure -->
+        <!-- https://mvnrepository.com/artifact/com.azure/azure-messaging-servicebus -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-messaging-servicebus</artifactId>
+            <version>7.17.11</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.azure/azure-storage-blob -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-storage-blob</artifactId>
+            <version>12.30.0</version>
+        </dependency>
+
         <!-- Demais dependencias -->
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -6,6 +6,7 @@ services:
       - "4566:4566"
     environment:
       - SERVICES=lambda,iam
+      - AWS_DEFAULT_REGION=sa-east-1
     volumes:
       - ./localstack/01-create-lambda.sh:/etc/localstack/init/ready.d/01-create-lambda.sh
       - ./localstack/lambda:/lambda                       # <-- monta o código da lambda

@@ -1,4 +1,4 @@
-package io.github.api.spring3examplos.lambda.app;
+package io.github.api.spring3examplos.aws.lambda.app;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

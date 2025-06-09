@@ -8,3 +8,10 @@ awslocal lambda delete-function --function-name HelloTiago >/dev/null 2>&1 || tr
 awslocal lambda create-function \
   --function-name HelloTiago \
   ...
+
+# Mostra a region
+awslocal configure get region
+
+
+# Docker
+docker compose up --build --force-recreate --no-deps [-d]

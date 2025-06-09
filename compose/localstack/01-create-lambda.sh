@@ -7,12 +7,14 @@ zip -j /tmp/lambda.zip /lambda/app.py  # <-- usa o caminho montado corretamente
 
 # cria role fake só para satisfazer o parâmetro
 awslocal iam create-role \
+  --region sa-east-1 \
   --role-name exec-role \
   --assume-role-policy-document '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":{"Service":"lambda.amazonaws.com"},"Action":"sts:AssumeRole"}]}'
 
 # cria a função Lambda
 awslocal lambda create-function \
   --function-name HelloTiago \
+  --region sa-east-1 \
   --runtime python3.11 \
   --handler app.handler \
   --zip-file fileb:///tmp/lambda.zip \
